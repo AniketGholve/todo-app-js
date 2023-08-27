@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App Js</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f47da1b9c3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="heading">
+        <h1>TODO <span class="blueColor"> APP</span></h1>
+    </div>
+    <div class="mainBody">
+        <div class="addTask">
+            <a onclick="toggleClose()" class="addTodo"><i class="fa-solid fa-plus circleBlue"></i> Add New Task</a>
+        </div>
+        <div id="todoTasks"></div>
+        <div id="addTodoTasks">
+            <div class="todoTaskBoxInput">
+                <h1 class="text-center">Add New Task</h1>
+                <hr>
+                <div class="operation">
+                    <form onsubmit="addTodo(event)">
+                        <div>
+                            <input type="text" name="heading" placeholder="Type The Task" class="text-center">
+                            <div class="btn-set">
+                                <button type="submit">Add</button>
+                                <button type="button" onclick="toggleClose()">Close</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div id="addTodoSubtaskTasks">
+            <div class="todoTaskBoxInput">
+                <h1 class="text-center">Add Subtask Task</h1>
+                <hr>
+                <div class="operation">
+                    <form onsubmit="addTodoSubtask(event)">
+                        <div>
+                            <input type="text" name="subtask" placeholder="Type The Task" class="text-center">
+                            <div class="btn-set">
+                                <button type="submit">Add</button>
+                                <button type="button" onclick="toggleCloseSubtask()">Close</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- <div class="todoElements"></div>
+<div class="todoOperations">
+    <i class="fa-solid fa-plus"></i>
+    <i class="fa-solid fa-trash"></i>
+</div> -->
+<script src="index.js"></script>
+
+</html>
