@@ -11,10 +11,11 @@
 
 <body>
     <div class="heading">
-        <h1>TODO <span class="blueColor"> APP</span></h1>
+        <h1 class="cursorPointer">TODO <span class="blueColor"> APP</span></h1>
     </div>
     <div class="mainBody">
         <div class="addTask">
+            <a onclick="backBtn(event)" class="addTodo hide" id="backBtn"><i class="fa-solid fa-arrow-left"></i> Back</a>
             <a onclick="toggleClose()" class="addTodo"><i class="fa-solid fa-plus circleBlue"></i> Add New Task</a>
         </div>
         <div id="todoTasks"></div>
@@ -54,11 +55,6 @@
         </div>
     </div>
 </body>
-<!-- <div class="todoElements"></div>
-<div class="todoOperations">
-    <i class="fa-solid fa-plus"></i>
-    <i class="fa-solid fa-trash"></i>
-</div> -->
 <script src="index.js"></script>
 
 </html>
